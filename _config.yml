@@ -1,0 +1,9 @@
+title: DevOps Vacancies
+description: Find your next DevOps role here
+url: "https://sidiqputra.github.io"
+company_name: Panji Tengkorak Group
+company_description: Panji Petualang
+
+# Build settings
+markdown: kramdown
+theme: minima
