@@ -15,7 +15,7 @@ benefits:
   - Health, dental, and vision insurance
 ---
 
-We're seeking a skilled DevOps Engineer to join our dynamic team. In this role, you'll be responsible for designing, implementing, and maintaining our cloud infrastructure and CI/CD pipelines.
+We're seeking a skilled UI / UX to join our dynamic team.
 
 ## Key Responsibilities
 
