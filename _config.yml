@@ -1,9 +1,13 @@
-title: DevOps Vacancies
-description: Find your next DevOps role here
+title: Your Company Name
+description: Find your next exciting role with us
 url: "https://sidiqputra.github.io"
-company_name: Panji Tengkorak Group
-company_description: Panji Petualang
+company_name: Panji Tengkorak Solution
+company_description: Panji Tengkorak Solution offers tailored IT services with a focus on scalability and robust security, ensuring businesses can operate efficiently and securely.
 
 # Build settings
 markdown: kramdown
-theme: minima
+plugins:
+  - jekyll-seo-tag
+
+# Custom variables
+logo: /assets/images/panji-tengkorak.svg
