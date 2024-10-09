@@ -1,5 +1,5 @@
 <div class="vacancy-card">
     <h3>{{ vacancy.title }}</h3>
     <p>{{ vacancy.location }}</p>
-    <a href="{{ vacancy.url }}" class="btn">View Details</a>
+    <a href="{{ vacancy.url | relative_url }}" class="btn">View Details</a>
 </div>

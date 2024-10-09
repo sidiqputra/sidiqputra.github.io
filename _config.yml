@@ -1,4 +1,4 @@
-title: Your Company Name
+title: Panji Tengkorak Solution
 description: Find your next exciting role with us
 url: "https://sidiqputra.github.io"
 company_name: Panji Tengkorak Solution
@@ -11,3 +11,8 @@ plugins:
 
 # Custom variables
 logo: /assets/images/panji-tengkorak.svg
+
+collections:
+  vacancies:
+    output: true
+    permalink: /vacancies/:name/

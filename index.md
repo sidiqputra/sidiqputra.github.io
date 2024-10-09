@@ -10,7 +10,7 @@ title: Home
 ## Featured Vacancies
 
 <div class="vacancy-list">
-  {% for vacancy in site.data.vacancies limit:3 %}
+  {% for vacancy in site.vacancies limit:3 %}
     {% include vacancy-card.html vacancy=vacancy %}
   {% endfor %}
 </div>
