@@ -142,56 +142,59 @@ h1, h2, h3 {
     text-align: center;
 }
 
+/* Header Styles */
+.site-header {
+    background-color: var(--primary-color);
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.site-header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0; /* Remove any padding */
+}
+
+.main-nav ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0; /* Remove any margin */
+    padding: 0; /* Remove any padding */
+}
+
+.main-nav ul li {
+    margin: 0; /* Remove any margin */
+}
+
+.main-nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s ease;
+    display: block; /* Ensure the entire area is clickable */
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
     .main-nav ul {
-        display: none;
         flex-direction: column;
-        position: absolute;
-        top: 100%;
-        left: 0;
         width: 100%;
-        background-color: var(--primary-color);
-    }
-
-    .main-nav ul.show {
-        display: flex;
     }
 
     .main-nav ul li {
-        text-align: center;
+        width: 100%; /* Ensure li takes full width on mobile */
     }
 
     .main-nav ul li a {
-        display: block;
         padding: 1rem;
+        width: 100%; /* Ensure anchor takes full width of li */
     }
 
-    .menu-toggle {
-        display: block;
-        background: none;
-        border: none;
-        cursor: pointer;
-    }
-
-    .menu-toggle span {
-        display: block;
-        width: 25px;
-        height: 3px;
-        background-color: white;
-        margin: 5px 0;
-        transition: 0.4s;
-    }
-
-    .menu-toggle.active span:nth-child(1) {
-        transform: rotate(-45deg) translate(-5px, 6px);
-    }
-
-    .menu-toggle.active span:nth-child(2) {
-        opacity: 0;
-    }
-
-    .menu-toggle.active span:nth-child(3) {
-        transform: rotate(45deg) translate(-5px, -6px);
+    /* Adjust container padding for mobile */
+    .container {
+        padding: 0;
     }
 }

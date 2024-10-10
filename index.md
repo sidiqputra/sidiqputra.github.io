@@ -33,7 +33,7 @@ title: Home
     <div class="container">
         <h2>Contact Us</h2>
         <p>Get in touch with us for any inquiries or opportunities.</p>
-        <p>Email: info@kawanbarugroup.com</p>
+        <p>Email: info@kawanbaru.com</p>
         <p>Phone: +62 21 1234 5678</p>
     </div>
 </section>
