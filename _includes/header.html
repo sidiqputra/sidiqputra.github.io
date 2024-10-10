@@ -1,9 +1,20 @@
-<header>
-    <img src="{{ site.logo | relative_url }}" alt="{{ site.title }} logo">
-    <h1>{{ site.title }}</h1>
-    <p>{{ site.description }}</p>
-    <nav>
-        <a href="{{ "/" | relative_url }}">Home</a> |
-        <a href="{{ "/vacancies" | relative_url }}">All Vacancies</a>
-    </nav>
+<header class="site-header">
+    <div class="container">
+        <a href="{{ "/" | relative_url }}" class="logo">
+            <img src="{{ site.logo | relative_url }}" alt="{{ site.title }} logo">
+        </a>
+        <nav class="main-nav">
+            <button class="menu-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul>
+                <li><a href="{{ "/" | relative_url }}">Home</a></li>
+                <li><a href="{{ "/vacancies" | relative_url }}">Vacancies</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
 </header>

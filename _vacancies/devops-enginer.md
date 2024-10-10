@@ -11,6 +11,7 @@ benefits:
   - Competitive salary and equity options
   - Flexible work hours and remote-first culture
   - Health, dental, and vision insurance
+email_pic: hr@kawanbarugroup.com
 ---
 
 We're seeking a skilled DevOps Engineer to join our dynamic team. In this role, you'll be responsible for designing, implementing, and maintaining our cloud infrastructure and CI/CD pipelines.

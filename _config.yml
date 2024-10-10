@@ -1,8 +1,8 @@
-title: Panji Tengkorak Solution
+title: Kawan Baru Group
 description: Find your next exciting role with us
 url: "https://sidiqputra.github.io"
 company_name: Panji Tengkorak Solution
-company_description: Panji Tengkorak Solution offers tailored IT services with a focus on scalability and robust security, ensuring businesses can operate efficiently and securely.
+company_description: Kawan Baru Group is a dynamic and innovative retail conglomerate headquartered in Indonesia. Founded in 2010, we have rapidly grown to become one of the country's leading retail enterprises, with a strong presence across multiple sectors.
 
 # Build settings
 markdown: kramdown
@@ -10,7 +10,7 @@ plugins:
   - jekyll-seo-tag
 
 # Custom variables
-logo: /assets/images/panji-tengkorak.svg
+logo: /assets/images/kawan-baru-group-logo.svg
 
 collections:
   vacancies:

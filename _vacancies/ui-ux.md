@@ -13,6 +13,7 @@ benefits:
   - Competitive salary and equity options
   - Flexible work hours and remote-first culture
   - Health, dental, and vision insurance
+email_pic: hr@kawanbarugroup.com
 ---
 
 We're seeking a skilled UI / UX to join our dynamic team.

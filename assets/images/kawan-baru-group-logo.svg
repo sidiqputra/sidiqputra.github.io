@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 150">
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#800000;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#5C0000;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect x="10" y="10" width="280" height="130" rx="15" fill="url(#bgGradient)"/>
+  <circle cx="85" cy="75" r="25" fill="#FFF" opacity="0.9"/>
+  <circle cx="150" cy="75" r="25" fill="#FFF" opacity="0.9"/>
+  <circle cx="215" cy="75" r="25" fill="#FFF" opacity="0.9"/>
+  <path d="M85 75 L150 75 L215 75" stroke="#FFF" stroke-width="5" fill="none"/>
+  <text x="150" y="40" font-family="Arial, sans-serif" font-size="24" font-weight="bold" text-anchor="middle" fill="#FFFFFF" dominant-baseline="middle">
+    KAWAN BARU
+  </text>
+  <text x="150" y="120" font-family="Arial, sans-serif" font-size="20" font-weight="normal" text-anchor="middle" fill="#FFFFFF" dominant-baseline="middle">
+    GROUP
+  </text>
+</svg>
