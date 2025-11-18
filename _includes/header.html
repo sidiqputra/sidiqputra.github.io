@@ -1,7 +1,12 @@
 <header class="site-header">
     <div class="container">
         <a href="{{ "/" | relative_url }}" class="logo">
-            <img src="{{ site.logo | relative_url }}" alt="{{ site.title }} logo">
+            {% if site.logo %}
+                <img src="{{ site.logo | relative_url }}" alt="{{ site.title }} logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                <span class="logo-fallback" style="display: none;">{{ site.title }}</span>
+            {% else %}
+                <span class="logo-fallback">{{ site.title }}</span>
+            {% endif %}
         </a>
         <nav class="main-nav">
             <button class="menu-toggle" aria-label="Toggle menu">
