@@ -1,5 +1,16 @@
 <div class="vacancy-card">
-    <h3>{{ vacancy.title }}</h3>
-    <p>{{ vacancy.location }}</p>
-    <a href="{{ vacancy.url | relative_url }}" class="btn">View Details</a>
+    <div class="vacancy-header">
+        <h3>{{ vacancy.title }}</h3>
+        <span class="vacancy-type-badge">{{ vacancy.type }}</span>
+    </div>
+    <div class="vacancy-meta">
+        <span class="vacancy-location">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+                <path d="M8 0C5.2 0 3 2.2 3 5c0 3.9 5 11 5 11s5-7.1 5-11c0-2.8-2.2-5-5-5zm0 7.5c-1.4 0-2.5-1.1-2.5-2.5S6.6 2.5 8 2.5s2.5 1.1 2.5 2.5S9.4 7.5 8 7.5z"/>
+            </svg>
+            {{ vacancy.location }}
+        </span>
+    </div>
+    <p class="vacancy-excerpt">{{ vacancy.content | strip_html | truncatewords: 20 }}</p>
+    <a href="{{ vacancy.url | relative_url }}" class="btn btn-vacancy">View Details →</a>
 </div>

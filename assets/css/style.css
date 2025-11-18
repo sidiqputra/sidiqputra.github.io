@@ -800,3 +800,734 @@ section {
         }
     }
 }
+/* ==============================================
+   PAGE HERO STYLES
+   ============================================== */
+.page-hero {
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    padding: 5rem 0 4rem;
+    color: white;
+    text-align: center;
+}
+
+.page-title {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: white;
+}
+
+.page-subtitle {
+    font-size: 1.2rem;
+    opacity: 0.95;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* ==============================================
+   ABOUT PAGE STYLES
+   ============================================== */
+.about-story {
+    padding: 5rem 0;
+    background: white;
+}
+
+.story-content {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.story-text h2 {
+    margin-bottom: 1.5rem;
+}
+
+.story-text p {
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 1.5rem;
+    font-size: 1.05rem;
+}
+
+.timeline-card {
+    background: var(--light-gray);
+    padding: 2.5rem;
+    border-radius: 16px;
+    box-shadow: var(--shadow-md);
+}
+
+.timeline-item {
+    padding: 1.5rem;
+    background: white;
+    border-radius: 12px;
+    margin-bottom: 1rem;
+    border-left: 4px solid var(--accent-color);
+    transition: transform var(--transition-fast);
+}
+
+.timeline-item:hover {
+    transform: translateX(8px);
+}
+
+.timeline-year {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.timeline-desc {
+    color: #666;
+    font-size: 1rem;
+}
+
+.mission-vision {
+    padding: 5rem 0;
+    background: var(--light-gray);
+}
+
+.mv-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.mv-card {
+    background: white;
+    padding: 3rem 2rem;
+    border-radius: 16px;
+    box-shadow: var(--shadow-md);
+    text-align: center;
+    transition: all var(--transition-medium);
+}
+
+.mv-card:hover {
+    transform: translateY(-10px);
+    box-shadow: var(--shadow-lg);
+}
+
+.mv-icon {
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.mv-card h3 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.mv-card p {
+    line-height: 1.7;
+    color: #666;
+}
+
+.company-culture {
+    padding: 5rem 0;
+    background: white;
+}
+
+.culture-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2.5rem;
+}
+
+.culture-card {
+    position: relative;
+    padding: 2rem;
+    background: var(--light-gray);
+    border-radius: 12px;
+    transition: all var(--transition-medium);
+}
+
+.culture-card:hover {
+    background: white;
+    box-shadow: var(--shadow-lg);
+    transform: translateY(-5px);
+}
+
+.culture-number {
+    position: absolute;
+    top: -15px;
+    left: 20px;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 1.2rem;
+    box-shadow: var(--shadow-md);
+}
+
+.culture-card h3 {
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+}
+
+.culture-card p {
+    color: #666;
+    line-height: 1.6;
+}
+
+.leadership-team {
+    padding: 5rem 0;
+    background: var(--light-gray);
+}
+
+.leadership-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2.5rem;
+}
+
+.leader-card {
+    background: white;
+    padding: 2.5rem 2rem;
+    border-radius: 16px;
+    box-shadow: var(--shadow-md);
+    text-align: center;
+    transition: all var(--transition-medium);
+}
+
+.leader-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-lg);
+}
+
+.leader-avatar {
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    margin: 0 auto 1.5rem;
+    box-shadow: var(--shadow-md);
+}
+
+.leader-card h3 {
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.leader-role {
+    color: var(--accent-color);
+    font-weight: 600;
+    margin-bottom: 1rem;
+    font-size: 0.95rem;
+}
+
+.leader-bio {
+    color: #666;
+    line-height: 1.6;
+    font-size: 0.95rem;
+}
+
+.join-cta,
+.careers-cta {
+    padding: 5rem 0;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: white;
+    text-align: center;
+}
+
+.cta-content h2 {
+    color: white;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.cta-content p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    opacity: 0.95;
+}
+
+/* ==============================================
+   VACANCIES PAGE STYLES
+   ============================================== */
+.vacancies-intro {
+    padding: 4rem 0;
+    background: white;
+}
+
+.intro-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.intro-content h2 {
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+}
+
+.intro-content p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #666;
+}
+
+.vacancies-listing {
+    padding: 4rem 0;
+    background: var(--light-gray);
+}
+
+.no-vacancies {
+    text-align: center;
+    padding: 4rem 2rem;
+    background: white;
+    border-radius: 16px;
+    box-shadow: var(--shadow-md);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.no-vacancies-icon {
+    font-size: 4rem;
+    margin-bottom: 1.5rem;
+}
+
+.no-vacancies h3 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.no-vacancies p {
+    color: #666;
+    line-height: 1.7;
+}
+
+.no-vacancies a {
+    color: var(--primary-color);
+    text-decoration: underline;
+}
+
+.application-process {
+    padding: 5rem 0;
+    background: white;
+}
+
+.process-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 2rem;
+}
+
+.process-step {
+    text-align: center;
+    padding: 2rem 1.5rem;
+    background: var(--light-gray);
+    border-radius: 12px;
+    transition: all var(--transition-medium);
+    position: relative;
+}
+
+.process-step:hover {
+    transform: translateY(-5px);
+    background: white;
+    box-shadow: var(--shadow-lg);
+}
+
+.step-number {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin: 0 auto 1.5rem;
+    box-shadow: var(--shadow-md);
+}
+
+.process-step h3 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+.process-step p {
+    color: #666;
+    line-height: 1.6;
+    font-size: 0.95rem;
+}
+
+/* Enhanced Vacancy Card */
+.vacancy-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+    gap: 1rem;
+}
+
+.vacancy-type-badge {
+    background: var(--accent-color);
+    color: var(--primary-color);
+    padding: 0.4rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    flex-shrink: 0;
+}
+
+.vacancy-meta {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    color: #666;
+    font-size: 0.95rem;
+}
+
+.vacancy-location {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.vacancy-excerpt {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.btn-vacancy {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+/* ==============================================
+   VACANCY DETAIL PAGE STYLES
+   ============================================== */
+.vacancy-detail-hero {
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    padding: 3rem 0 2.5rem;
+    color: white;
+}
+
+.vacancy-breadcrumb {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 2rem;
+    font-size: 0.9rem;
+}
+
+.vacancy-breadcrumb a {
+    color: white;
+    text-decoration: none;
+    transition: opacity var(--transition-fast);
+}
+
+.vacancy-breadcrumb a:hover {
+    opacity: 0.8;
+}
+
+.breadcrumb-sep {
+    opacity: 0.6;
+}
+
+.vacancy-detail-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    color: white;
+}
+
+.vacancy-detail-meta {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.meta-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1rem;
+}
+
+.vacancy-detail {
+    padding: 4rem 0;
+    background: var(--light-gray);
+}
+
+.vacancy-content-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 3rem;
+}
+
+.vacancy-main-content {
+    background: white;
+    padding: 3rem;
+    border-radius: 16px;
+    box-shadow: var(--shadow-md);
+}
+
+.content-section {
+    margin-bottom: 3rem;
+}
+
+.content-section:last-child {
+    margin-bottom: 0;
+}
+
+.content-section h2 {
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 2px solid var(--accent-color);
+}
+
+.section-content {
+    color: #555;
+    line-height: 1.8;
+}
+
+.section-content p {
+    margin-bottom: 1rem;
+}
+
+.section-content h2 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+}
+
+.requirements-list,
+.benefits-list {
+    list-style: none;
+    padding: 0;
+}
+
+.requirements-list li,
+.benefits-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 1rem;
+    background: var(--light-gray);
+    border-radius: 8px;
+    margin-bottom: 0.75rem;
+    transition: all var(--transition-fast);
+}
+
+.requirements-list li:hover,
+.benefits-list li:hover {
+    background: white;
+    box-shadow: var(--shadow-sm);
+    transform: translateX(5px);
+}
+
+.check-icon {
+    color: green;
+    flex-shrink: 0;
+    stroke-width: 3;
+}
+
+.star-icon {
+    color: var(--accent-color);
+    flex-shrink: 0;
+}
+
+.vacancy-sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.sidebar-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: var(--shadow-md);
+}
+
+.sidebar-card h3 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+}
+
+.sidebar-card p {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.apply-card {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: white;
+}
+
+.apply-card h3,
+.apply-card p {
+    color: white;
+}
+
+.btn-full {
+    width: 100%;
+    justify-content: center;
+    display: inline-flex;
+    align-items: center;
+}
+
+.sidebar-email {
+    font-size: 0.9rem;
+    opacity: 0.9;
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 0;
+    word-break: break-all;
+}
+
+.share-buttons {
+    display: flex;
+    gap: 0.75rem;
+}
+
+.share-btn {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.75rem;
+    background: var(--light-gray);
+    border: none;
+    border-radius: 8px;
+    color: var(--text-color);
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: all var(--transition-fast);
+}
+
+.share-btn:hover {
+    background: var(--primary-color);
+    color: white;
+    transform: translateY(-2px);
+}
+
+.other-vacancies {
+    padding: 4rem 0;
+    background: white;
+}
+
+.other-vacancies h2 {
+    text-align: center;
+    margin-bottom: 3rem;
+    font-size: 2rem;
+}
+
+.view-all-cta {
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.no-other-vacancies {
+    text-align: center;
+    color: #666;
+    font-style: italic;
+    padding: 2rem;
+}
+
+/* Navigation Active State */
+.main-nav ul li a.active {
+    background: var(--secondary-color);
+    border-radius: 4px;
+}
+
+/* ==============================================
+   RESPONSIVE STYLES FOR NEW PAGES
+   ============================================== */
+@media (max-width: 1024px) {
+    .story-content {
+        grid-template-columns: 1fr;
+    }
+
+    .vacancy-content-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .vacancy-sidebar {
+        order: -1;
+    }
+}
+
+@media (max-width: 768px) {
+    .page-title {
+        font-size: 2.2rem;
+    }
+
+    .page-subtitle {
+        font-size: 1.1rem;
+    }
+
+    .mv-grid,
+    .culture-grid,
+    .leadership-grid,
+    .process-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .vacancy-main-content {
+        padding: 2rem;
+    }
+
+    .vacancy-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .vacancy-detail-title {
+        font-size: 2rem;
+    }
+
+    .vacancy-detail-meta {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .share-buttons {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 480px) {
+    .page-hero {
+        padding: 3rem 0 2rem;
+    }
+
+    .page-title {
+        font-size: 1.8rem;
+    }
+
+    .cta-content h2 {
+        font-size: 1.8rem;
+    }
+
+    .vacancy-main-content {
+        padding: 1.5rem;
+    }
+
+    .sidebar-card {
+        padding: 1.5rem;
+    }
+}

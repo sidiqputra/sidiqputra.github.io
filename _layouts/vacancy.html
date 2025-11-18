@@ -1,29 +1,138 @@
 ---
 layout: default
 ---
-<article class="vacancy">
-  <h1>{{ page.title }}</h1>
-  <p><strong>Location:</strong> {{ page.location }}</p>
-  <p><strong>Type:</strong> {{ page.type }}</p>
-  
-  <h2>About the Role</h2>
-  {{ content }}
-  
-  <h2>Requirements</h2>
-  <ul>
-  {% for requirement in page.requirements %}
-    <li>{{ requirement }}</li>
-  {% endfor %}
-  </ul>
-  
-  <h2>Benefits</h2>
-  <ul>
-  {% for benefit in page.benefits %}
-    <li>{{ benefit }}</li>
-  {% endfor %}
-  </ul>
 
-  <h2>How to apply</h2>
-  <p>Sent your CV to email <strong>{{ page.email_pic }}</strong></p>
+<section class="vacancy-detail-hero">
+    <div class="container">
+        <div class="vacancy-breadcrumb">
+            <a href="{{ "/" | relative_url }}">Home</a>
+            <span class="breadcrumb-sep">›</span>
+            <a href="{{ "/vacancies" | relative_url }}">Careers</a>
+            <span class="breadcrumb-sep">›</span>
+            <span>{{ page.title }}</span>
+        </div>
+        <h1 class="vacancy-detail-title">{{ page.title }}</h1>
+        <div class="vacancy-detail-meta">
+            <span class="meta-item">
+                <svg width="20" height="20" viewBox="0 0 16 16" fill="currentColor">
+                    <path d="M8 0C5.2 0 3 2.2 3 5c0 3.9 5 11 5 11s5-7.1 5-11c0-2.8-2.2-5-5-5zm0 7.5c-1.4 0-2.5-1.1-2.5-2.5S6.6 2.5 8 2.5s2.5 1.1 2.5 2.5S9.4 7.5 8 7.5z"/>
+                </svg>
+                {{ page.location }}
+            </span>
+            <span class="meta-item">
+                <svg width="20" height="20" viewBox="0 0 16 16" fill="currentColor">
+                    <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm0 14.5a6.5 6.5 0 1 1 0-13 6.5 6.5 0 0 1 0 13z"/>
+                    <path d="M7.5 3h1v5.5h-1zm0 6.5h1v1h-1z"/>
+                </svg>
+                {{ page.type }}
+            </span>
+        </div>
+    </div>
+</section>
 
+<article class="vacancy-detail">
+    <div class="container">
+        <div class="vacancy-content-grid">
+            <div class="vacancy-main-content">
+                <section class="content-section">
+                    <h2>About the Role</h2>
+                    <div class="section-content">
+                        {{ content }}
+                    </div>
+                </section>
+
+                <section class="content-section">
+                    <h2>What We're Looking For</h2>
+                    <ul class="requirements-list">
+                    {% for requirement in page.requirements %}
+                        <li>
+                            <svg class="check-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            {{ requirement }}
+                        </li>
+                    {% endfor %}
+                    </ul>
+                </section>
+
+                <section class="content-section">
+                    <h2>What We Offer</h2>
+                    <ul class="benefits-list">
+                    {% for benefit in page.benefits %}
+                        <li>
+                            <svg class="star-icon" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                            </svg>
+                            {{ benefit }}
+                        </li>
+                    {% endfor %}
+                    </ul>
+                </section>
+            </div>
+
+            <aside class="vacancy-sidebar">
+                <div class="sidebar-card apply-card">
+                    <h3>Ready to Apply?</h3>
+                    <p>Send your CV and cover letter to:</p>
+                    <a href="mailto:{{ page.email_pic }}" class="btn btn-primary btn-full">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" style="margin-right: 8px;">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                            <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg>
+                        Apply Now
+                    </a>
+                    <p class="sidebar-email">{{ page.email_pic }}</p>
+                </div>
+
+                <div class="sidebar-card share-card">
+                    <h3>Share This Job</h3>
+                    <p>Know someone perfect for this role? Share it with them!</p>
+                    <div class="share-buttons">
+                        <button class="share-btn" onclick="navigator.share ? navigator.share({title: '{{ page.title }}', url: window.location.href}) : alert('Sharing not supported')">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <circle cx="18" cy="5" r="3"></circle>
+                                <circle cx="6" cy="12" r="3"></circle>
+                                <circle cx="18" cy="19" r="3"></circle>
+                                <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line>
+                                <line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line>
+                            </svg>
+                            Share
+                        </button>
+                        <button class="share-btn" onclick="navigator.clipboard.writeText(window.location.href).then(() => alert('Link copied!'))">
+                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                            </svg>
+                            Copy Link
+                        </button>
+                    </div>
+                </div>
+
+                <div class="sidebar-card info-card">
+                    <h3>Questions?</h3>
+                    <p>Have questions about this position? Feel free to reach out to our HR team.</p>
+                    <a href="mailto:hr@kawanbarugroup.com" class="btn btn-secondary btn-full">Contact HR</a>
+                </div>
+            </aside>
+        </div>
+    </div>
 </article>
+
+<section class="other-vacancies">
+    <div class="container">
+        <h2>Other Open Positions</h2>
+        <div class="vacancy-list">
+            {% assign other_vacancies = site.vacancies | where_exp: "vacancy", "vacancy.url != page.url" | limit: 3 %}
+            {% if other_vacancies.size > 0 %}
+                {% for vacancy in other_vacancies %}
+                    {% include vacancy-card.html vacancy=vacancy %}
+                {% endfor %}
+            {% else %}
+                <p class="no-other-vacancies">Check back soon for more opportunities!</p>
+            {% endif %}
+        </div>
+        <div class="view-all-cta">
+            <a href="{{ "/vacancies" | relative_url }}" class="btn btn-large">View All Positions</a>
+        </div>
+    </div>
+</section>
