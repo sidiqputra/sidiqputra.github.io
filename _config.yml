@@ -1,18 +1,12 @@
-title: Kawan Baru Group
-description: Find your next exciting role with us
+title: Muhammad Sidiq Putra
+description: DevOps / Infrastructure Engineer — Kubernetes, Cloud, CI/CD
 url: "https://sidiqputra.github.io"
-company_name: Panji Tengkorak Solution
-company_description: Kawan Baru Group is a dynamic and innovative retail conglomerate headquartered in Indonesia. Founded in 2010, we have rapidly grown to become one of the country's leading retail enterprises, with a strong presence across multiple sectors.
+name: Muhammad Sidiq Putra
+tagline: DevOps / Infrastructure Engineer
+email: muhammadsidiqputra@gmail.com
+address: Depok, West Java, Indonesia
 
 # Build settings
 markdown: kramdown
 plugins:
   - jekyll-seo-tag
-
-# Custom variables
-logo: /assets/images/kawan-baru-group-logo.svg
-
-collections:
-  vacancies:
-    output: true
-    permalink: /vacancies/:name/

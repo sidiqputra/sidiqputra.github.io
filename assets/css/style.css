@@ -1879,3 +1879,52 @@ section {
         padding: 1.5rem 1rem;
     }
 }
+
+/* Experience / Job Cards */
+.job-list {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.job-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: var(--shadow-md);
+    border-left: 4px solid var(--primary-color);
+}
+
+.job-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.job-head h3 {
+    margin-bottom: 0.25rem;
+}
+
+.job-company {
+    color: #666;
+    font-weight: 600;
+}
+
+.job-dates {
+    color: var(--primary-color);
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.job-card ul {
+    padding-left: 1.2rem;
+    color: #555;
+}
+
+.job-card ul li {
+    margin-bottom: 0.5rem;
+    line-height: 1.7;
+}

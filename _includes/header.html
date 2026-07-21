@@ -1,12 +1,7 @@
 <header class="site-header">
     <div class="container">
         <a href="{{ "/" | relative_url }}" class="logo">
-            {% if site.logo %}
-                <img src="{{ site.logo | relative_url }}" alt="{{ site.title }} logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
-                <span class="logo-fallback" style="display: none;">{{ site.title }}</span>
-            {% else %}
-                <span class="logo-fallback">{{ site.title }}</span>
-            {% endif %}
+            <span class="logo-fallback">{{ site.title }}</span>
         </a>
         <nav class="main-nav">
             <button class="menu-toggle" aria-label="Toggle menu">
@@ -15,9 +10,10 @@
                 <span></span>
             </button>
             <ul>
-                <li><a href="{{ "/" | relative_url }}" class="{% if page.url == "/" %}active{% endif %}">Home</a></li>
-                <li><a href="{{ "/about" | relative_url }}" class="{% if page.url contains "/about" %}active{% endif %}">About Us</a></li>
-                <li><a href="{{ "/vacancies" | relative_url }}" class="{% if page.url contains "/vacanc" %}active{% endif %}">Careers</a></li>
+                <li><a href="{{ "/" | relative_url }}#about">About</a></li>
+                <li><a href="{{ "/" | relative_url }}#experience">Experience</a></li>
+                <li><a href="{{ "/" | relative_url }}#skills">Skills</a></li>
+                <li><a href="{{ "/" | relative_url }}#projects">Projects</a></li>
                 <li><a href="{{ "/" | relative_url }}#contact">Contact</a></li>
             </ul>
         </nav>
