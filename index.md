@@ -9,7 +9,7 @@ title: Home
             <p class="hero-prompt">$ whoami</p>
             <h1 class="hero-title">Muhammad Sidiq Putra</h1>
             <p class="hero-role">DevOps / Infrastructure Engineer</p>
-            <p class="hero-subtitle">6 years in DevOps, 10+ years in infrastructure. Cloud, Kubernetes, CI/CD, and self-hosted data platforms at scale.</p>
+            <p class="hero-subtitle">6+ years in DevOps, 10+ years in infrastructure. Cloud, Kubernetes, CI/CD, and self-hosted data platforms at scale.</p>
             <div class="hero-cta">
                 <a href="mailto:{{ site.email }}" class="btn btn-primary">Email Me</a>
                 <a href="#experience" class="btn btn-secondary">View Experience</a>
@@ -23,7 +23,7 @@ title: Home
         <div class="stats-grid">
             <div class="stat-card">
                 <div class="stat-icon">OPS</div>
-                <div class="stat-number">6 Years</div>
+                <div class="stat-number">6+ Years</div>
                 <div class="stat-label">DevOps Engineering</div>
             </div>
             <div class="stat-card">
@@ -50,7 +50,7 @@ title: Home
         <div class="about-content">
             <div class="about-text">
                 <h2>Profile</h2>
-                <p>Passionate engineer with 6 years of experience as a DevOps engineer and more than 10 years in infrastructure. Hands-on with cloud infrastructure (GCP and AWS), CI/CD tools (Jenkins, Ansible, ArgoCD, GitHub Actions, GitLab CI), self-hosted databases (PostgreSQL, MySQL, Elasticsearch, MongoDB), cache servers (Redis), message brokers (RabbitMQ, Kafka, Redpanda), load balancers (HAProxy, Nginx), and monitoring tools (Grafana, Prometheus, New Relic, Datadog).</p>
+                <p>Passionate engineer with 6+ years of experience as a DevOps engineer and more than 10 years in infrastructure. Hands-on with cloud infrastructure (GCP and AWS), CI/CD tools (Jenkins, Ansible, ArgoCD, GitHub Actions, GitLab CI), self-hosted databases (PostgreSQL, MySQL, Elasticsearch, MongoDB), cache servers (Redis), message brokers (RabbitMQ, Kafka, Redpanda), load balancers (HAProxy, Nginx), and monitoring tools (Grafana, Prometheus, New Relic, Datadog).</p>
                 <div class="about-features">
                     <div class="feature-item">
                         <span class="feature-check">✓</span>
@@ -97,9 +97,24 @@ title: Home
     <div class="container">
         <div class="section-header">
             <h2>Work Experience</h2>
-            <p>13 years across systems engineering, DevOps, and platform leadership</p>
+            <p>14 years across systems engineering, DevOps, and platform leadership</p>
         </div>
         <div class="job-list">
+            <div class="job-card">
+                <div class="job-head">
+                    <div>
+                        <h3>DevOps Engineer</h3>
+                        <p class="job-company">SQE (Squantum Engine)</p>
+                    </div>
+                    <span class="job-dates">Jan 2026 - Present</span>
+                </div>
+                <ul>
+                    <li>Manage cloud infrastructure and Kubernetes workloads for production services</li>
+                    <li>Build and maintain CI/CD pipelines for automated deployment</li>
+                    <li>Implement infrastructure as code and monitoring/alerting for platform reliability</li>
+                </ul>
+            </div>
+
             <div class="job-card">
                 <div class="job-head">
                     <div>
