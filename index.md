@@ -109,7 +109,7 @@ title: Home
                     <span class="job-dates">Jan 2026 - Present</span>
                 </div>
                 <ul>
-                    <li>Manage cloud infrastructure and Kubernetes workloads for production services</li>
+                    <li>Manage cloud infrastructure in GCP and AWS</li>
                     <li>Build and maintain CI/CD pipelines for automated deployment</li>
                     <li>Implement infrastructure as code and monitoring/alerting for platform reliability</li>
                 </ul>
