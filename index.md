@@ -121,7 +121,7 @@ title: Home
                         <h3>Sr. Platform Engineer</h3>
                         <p class="job-company">Kawan Lama Group, Jakarta, Indonesia</p>
                     </div>
-                    <span class="job-dates">2024 - Present</span>
+                    <span class="job-dates">2024 - Jan 2026</span>
                 </div>
                 <ul>
                     <li>Managed production Kubernetes clusters on OpenShift (on-premise), Amazon EKS, and Docker Swarm</li>
