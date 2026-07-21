@@ -4,11 +4,12 @@ title: Home
 ---
 
 <section class="hero">
-    <div class="hero-overlay"></div>
     <div class="container hero-content">
         <div class="hero-text">
+            <p class="hero-prompt">$ whoami</p>
             <h1 class="hero-title">Muhammad Sidiq Putra</h1>
-            <p class="hero-subtitle">DevOps / Infrastructure Engineer — 6 years in DevOps, 10+ years in infrastructure. Cloud, Kubernetes, CI/CD, and self-hosted data platforms at scale.</p>
+            <p class="hero-role">DevOps / Infrastructure Engineer</p>
+            <p class="hero-subtitle">6 years in DevOps, 10+ years in infrastructure. Cloud, Kubernetes, CI/CD, and self-hosted data platforms at scale.</p>
             <div class="hero-cta">
                 <a href="mailto:{{ site.email }}" class="btn btn-primary">Email Me</a>
                 <a href="#experience" class="btn btn-secondary">View Experience</a>
@@ -21,22 +22,22 @@ title: Home
     <div class="container">
         <div class="stats-grid">
             <div class="stat-card">
-                <div class="stat-icon">🛠️</div>
+                <div class="stat-icon">OPS</div>
                 <div class="stat-number">6 Years</div>
                 <div class="stat-label">DevOps Engineering</div>
             </div>
             <div class="stat-card">
-                <div class="stat-icon">🖥️</div>
+                <div class="stat-icon">SYS</div>
                 <div class="stat-number">10+ Years</div>
                 <div class="stat-label">Infrastructure</div>
             </div>
             <div class="stat-card">
-                <div class="stat-icon">☁️</div>
+                <div class="stat-icon">CLD</div>
                 <div class="stat-number">1000+</div>
                 <div class="stat-label">Servers Managed (AWS/GCP)</div>
             </div>
             <div class="stat-card">
-                <div class="stat-icon">🏅</div>
+                <div class="stat-icon">CRT</div>
                 <div class="stat-number">4</div>
                 <div class="stat-label">Certifications</div>
             </div>
@@ -70,8 +71,22 @@ title: Home
                 </div>
             </div>
             <div class="about-image">
-                <div class="image-placeholder">
-                    <span>⚙️</span>
+                <div class="terminal-window">
+                    <div class="terminal-titlebar">
+                        <span class="terminal-dot red"></span>
+                        <span class="terminal-dot yellow"></span>
+                        <span class="terminal-dot green"></span>
+                    </div>
+                    <div class="terminal-body">
+                        <p><span class="prompt">$</span> kubectl get nodes</p>
+                        <p class="comment">NAME      STATUS   ROLE</p>
+                        <p class="comment">node-01   Ready    control-plane</p>
+                        <p class="comment">node-02   Ready    worker</p>
+                        <p><span class="prompt">$</span> terraform apply</p>
+                        <p class="comment">Apply complete! Resources: 12 added</p>
+                        <p><span class="prompt">$</span> argocd app sync platform</p>
+                        <p class="comment">Synced &#8594; Healthy</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -168,22 +183,22 @@ title: Home
         </div>
         <div class="benefits-grid">
             <div class="benefit-card">
-                <div class="benefit-icon">☸️</div>
+                <div class="benefit-icon">K8S</div>
                 <h3>Cloud & Containers</h3>
                 <p>Kubernetes, Docker, OpenShift, Amazon EKS, Docker Swarm, GCP, AWS</p>
             </div>
             <div class="benefit-card">
-                <div class="benefit-icon">🔁</div>
+                <div class="benefit-icon">CI</div>
                 <h3>CI/CD & IaC</h3>
                 <p>Jenkins, ArgoCD, Ansible, Terraform, Packer, GitHub Actions, GitLab CI</p>
             </div>
             <div class="benefit-card">
-                <div class="benefit-icon">🗄️</div>
+                <div class="benefit-icon">DB</div>
                 <h3>Data & Messaging</h3>
                 <p>PostgreSQL (Patroni), MySQL, MongoDB, Elasticsearch, Redis, Kafka, RabbitMQ, Redpanda</p>
             </div>
             <div class="benefit-card">
-                <div class="benefit-icon">📊</div>
+                <div class="benefit-icon">OBS</div>
                 <h3>Monitoring & Observability</h3>
                 <p>Grafana, Prometheus, Victoria Metrics, Datadog, New Relic, ELK Stack, Zabbix</p>
             </div>
@@ -199,13 +214,16 @@ title: Home
         </div>
         <div class="testimonial-grid">
             <div class="testimonial-card">
-                <div class="testimonial-quote">lapakgaming.com — infrastructure and DevOps</div>
+                <div class="testimonial-quote">lapakgaming.com</div>
+                <div class="testimonial-author">Infrastructure & DevOps</div>
             </div>
             <div class="testimonial-card">
-                <div class="testimonial-quote">Hijra Group — infrastructure and DevOps</div>
+                <div class="testimonial-quote">Hijra Group</div>
+                <div class="testimonial-author">Infrastructure & DevOps</div>
             </div>
             <div class="testimonial-card">
-                <div class="testimonial-quote">Kompas Gramedia (Growth Center) — infrastructure and DevOps</div>
+                <div class="testimonial-quote">Kompas Gramedia (Growth Center)</div>
+                <div class="testimonial-author">Infrastructure & DevOps</div>
             </div>
         </div>
     </div>
@@ -215,17 +233,17 @@ title: Home
     <div class="container">
         <div class="mv-grid">
             <div class="mv-card">
-                <div class="mv-icon">🎓</div>
+                <div class="mv-icon">EDU</div>
                 <h3>Education</h3>
                 <p>Bachelor of Information Technology, BINUS University (2008 - 2012) — GPA 3.04 / 4.0</p>
             </div>
             <div class="mv-card">
-                <div class="mv-icon">🏅</div>
+                <div class="mv-icon">CRT</div>
                 <h3>Certifications</h3>
                 <p>CCNA (2013) · RHCE (2014) · VCP 6 (2016) · CKA (2023)</p>
             </div>
             <div class="mv-card">
-                <div class="mv-icon">🌐</div>
+                <div class="mv-icon">LNG</div>
                 <h3>Languages</h3>
                 <p>English</p>
             </div>
@@ -241,14 +259,14 @@ title: Home
                 <p>Open to DevOps and infrastructure engineering opportunities.</p>
                 <div class="contact-details">
                     <div class="contact-item">
-                        <span class="contact-icon">📧</span>
+                        <span class="contact-icon">@</span>
                         <div>
                             <strong>Email</strong>
                             <a href="mailto:{{ site.email }}">{{ site.email }}</a>
                         </div>
                     </div>
                     <div class="contact-item">
-                        <span class="contact-icon">📍</span>
+                        <span class="contact-icon">&#9656;</span>
                         <div>
                             <strong>Location</strong>
                             <span>{{ site.address }}</span>
